@@ -42,7 +42,13 @@ LogicService logicService = new LogicService();
 				+ "<p>= 첫번째 칸<br>\r\n"
 				+ "= 두번째 칸<br>\r\n"
 				+ "= 세번째 칸<br>\r\n"
-				+ "= 네번째 칸</p>";
+				+ "= 네번째 칸</p>"
+				+ "<p>@S3</p>\r\n"
+				+ "<h2>3번입니다</h2>\r\n"
+				+ "<p>= ### div1 이게 또 문제네<br>\r\n"
+				+ "여긴 div1 안의 p태그<br>\r\n"
+				+ "= ### div2 어떡하지<br>\r\n"
+				+ "여긴 div2 안의 p태그니까 pp</p>";
 		
 
 
@@ -84,8 +90,8 @@ LogicService logicService = new LogicService();
 				
 				break;
 			case "3" : 
-				startTag = "<section class=\"S2\"><div class=\"wrap\"><div class=\"content-center\">";
-				endTag = "</div></div></section>";
+				startTag = "<section class=\"S3\"><div class=\"wrap\">";
+				endTag = "</div></section>";
 				
 				String resultContent3 = logicService.getContent(pptBitBits, startTag, endTag, pptBitBits.length);
 				
